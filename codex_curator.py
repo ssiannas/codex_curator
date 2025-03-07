@@ -27,7 +27,7 @@ class CodexCurator:
     Answer: [/INST]
     """
 
-    def __init__(self, llm_model: str = "deepseek-r1:32b", embedding_model: str = "mxbai-embed-large"):
+    def __init__(self, llm_model: str = "deepseek-r1:latest", embedding_model: str = "mxbai-embed-large"):
         self.model_name = llm_model
         self.model = ChatOllama(model=self.model_name)
         self.embeddings = OllamaEmbeddings(model=embedding_model)

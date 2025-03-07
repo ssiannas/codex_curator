@@ -61,7 +61,7 @@ def page():
     """Main app page layout."""
     if len(st.session_state) == 0:
         st.session_state["messages"] = []
-        st.session_state["assistant"] = CodexCurator()
+        st.session_state["assistant"] = CodexCurator(llm_model=model_name)
 
     st.header("Codex Curator")
 
@@ -96,5 +96,11 @@ def page():
         st.session_state["assistant"].clear()
 
 
+import sys
+model_name = "latest"
 if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        model_name = sys.argv[1]
+    model_name = f"deepseek-r1:{model_name}"
+    
     page()

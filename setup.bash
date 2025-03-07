@@ -8,4 +8,7 @@ else
     source env/bin/activate
 fi
 
-streamlit run chat_app.py $1
+ollama pull deepseek-r1:latest
+ollama pull mxbai-embed-large
+pip install -r requirements.txt
+mkdir knowledge_base
