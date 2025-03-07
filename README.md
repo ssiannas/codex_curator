@@ -16,10 +16,13 @@ sh setup.bash
 python3 -m venv env
 ```
 **2. Activate the environment**:
+
 **Windows:**
+
 `env\Scripts\activate`
 
 **Linux / MacOS**
+
 `source env/bin/activate`
 
 **3. Pull models and finalize**
