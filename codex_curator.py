@@ -84,8 +84,8 @@ class CodexCurator:
         logger.info(f"Retrieving context for query: {query}")
         retrieved_docs = self.retriever.invoke(query)
 
-        if not retrieved_docs:
-            return "No relevant context found in the document to answer your question."
+        # if not retrieved_docs:
+        #     return "No relevant context found in the document to answer your question."
 
         formatted_input = {
             "context": "\n\n".join(doc.page_content for doc in retrieved_docs),
