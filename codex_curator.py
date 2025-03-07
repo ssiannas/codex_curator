@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 class CodexCurator:
     template = """
     <s> [INST]
-    You are an assistant for worldbuilding tasks. Use the following context elements to answer questions regarding worldbuilding, session planning, campaign management, creative writing, NPC and character creation, and more. If you do not know the answer, simply say so. Keep your answers relatively brief and concise, with mostly two to three paragraphs. We can expand on those if needed. [/INST] </s>
+    You are an assistant for worldbuilding tasks. Use the following context elements to answer questions regarding worldbuilding, session planning, campaign management, creative writing, NPC and character creation, and more. If you do not know the answer, simply say so. Keep your answers relatively brief and concise, with mostly two to three paragraphs. We can expand on those if needed. If not stated otherwise, assume we are running 5th edition Dungeons and Dragons[/INST] </s>
     
     [INST] Question: {question}
     Context: {context}
