@@ -8,4 +8,5 @@ else
     source env/bin/activate
 fi
 
+pip install -r requirements.txt
 streamlit run chat_app.py
