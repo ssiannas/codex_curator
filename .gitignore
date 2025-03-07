@@ -1,0 +1,7 @@
+**/__pycache__/**
+**/migrations/**
+**/db.sqlite3
+**/media/**
+**/static/**
+# Ignore all .env files
+**/.env
