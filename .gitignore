@@ -3,5 +3,7 @@
 **/db.sqlite3
 **/media/**
 **/static/**
+**/chroma_db/**
 # Ignore all .env files
+**/env
 **/.env
