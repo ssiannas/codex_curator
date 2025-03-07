@@ -33,7 +33,13 @@ pip install -r requirements.txt
 mkdir knowledge_base
 ```
 ## Use
-To use with the default model (7b) just run:
+If you have a bash shell just run:
+```bash
+sh run.bash
+```
+
+Else, first *activate the venv* as you can see in the above section and then run:
+
 ```bash
 streamlit run chat_app.py
 ```
